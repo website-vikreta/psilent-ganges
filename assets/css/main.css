@@ -65,7 +65,7 @@ img {
    --line-clamp: 5;
 }
 
-@media screen and (max-width: 976px) {
+@media screen and (min-width: 976px) {
 }
 
 @media screen and (min-width: 768px) {
@@ -128,9 +128,39 @@ img {
 }
 
 /* Styling Home page */
+/* navigation */
+nav {
+   position: relative;
+}
+nav::after {
+   content: "";
+   position: absolute;
+   top: 20%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.2);
+   border-radius: 6px;
+   z-index: -1;
+   scale: 0.88;
+}
+nav .logo {
+   clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+nav .navMenu {
+   box-shadow: 0 200px 200px 100px rgba(0, 0, 0, 0.8);
+}
+nav .navMenu .active {
+   box-shadow: none;
+   text-decoration: underline;
+   text-underline-offset: 4px;
+}
+nav #navbarToggle:checked ~ .navMenu {
+   display: flex;
+}
 /* Hero */
 .hero {
-   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
    position: relative;
 }
 .hero::after {
@@ -242,4 +272,29 @@ img {
 }
 .cta .content-wrapper {
    background: rgba(255, 245, 230, 0.9);
+}
+
+@media screen and (min-width: 768px) {
+   .hero {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+   }
+}
+
+@media screen and (min-width: 976px) {
+   nav::after {
+      scale: 0.9;
+   }
+
+   nav .navMenu .active {
+      box-shadow: inset 0 -4px 0 0 #fd9a02;
+      text-decoration: initial;
+   }
+   nav .navMenu {
+      box-shadow: none;
+      text-decoration: initial;
+      text-underline-offset: initial;
+   }
+   nav .navMenu {
+      display: flex !important;
+   }
 }
