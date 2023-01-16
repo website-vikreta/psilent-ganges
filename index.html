@@ -270,15 +270,85 @@
       <!-- ======================================== -->
       <!-- FAQs Section -->
       <!-- ======================================== -->
-      <section class="faqs">
+      <section class="faqs bg-greyscale-300 py-[1px] lg:py-0 lg:bg-transparent">
          <div class="container mx-auto my-[80px] md:my-[100px]">
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-20">
-               <div class="content col-span-2">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
+               <div class="content">
                   <h2 class="heading heading-2">FAQs</h2>
 
+                  <ul class="flex flex-col gap-6 my-10">
+                     <li x-data="accordion(1)">
+                        <h2 @click="handleClick()"
+                           class="flex flex-row justify-between gap-10 items-center cursor-pointer">
+                           <span>Lorem ipsum dolor sit amet consectetur. Aliquam varius diam diam nulla ac iaculis
+                              felis.</span>
+                           <i class="bi bi-chevron-down transition-transform duration-500" :class="handleRotate()"></i>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                           class="overflow-hidden max-h-0 duration-500 transition-all">
+                           <p class="pt-3 text-sm text-greyscale-1600">
+                              Lorem ipsum dolor sit amet consectetur. Tincidunt lorem tempus diam laoreet id neque
+                              mauris eget. Quisque sollicitudin aliquet viverra leo risus nullam morbi nisi. Nisi mauris
+                              libero iaculis bibendum lorem egestas hac sem. Nunc lacus eu diam rhoncus pharetra.
+                           </p>
+                        </div>
+                     </li>
+                     <li x-data="accordion(2)">
+                        <h2 @click="handleClick()"
+                           class="flex flex-row justify-between gap-10 items-center cursor-pointer">
+                           <span>Lorem ipsum dolor sit amet consectetur. Aliquam varius diam diam nulla ac iaculis
+                              felis.</span>
+                           <i class="bi bi-chevron-down transition-transform duration-500" :class="handleRotate()"></i>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                           class="overflow-hidden max-h-0 duration-500 transition-all">
+                           <p class="pt-3 text-sm text-greyscale-1600">
+                              Lorem ipsum dolor sit amet consectetur. Tincidunt lorem tempus diam laoreet id neque
+                              mauris eget. Quisque sollicitudin aliquet viverra leo risus nullam morbi nisi. Nisi mauris
+                              libero iaculis bibendum lorem egestas hac sem. Nunc lacus eu diam rhoncus pharetra.
+                           </p>
+                        </div>
+                     </li>
+                     <li x-data="accordion(3)">
+                        <h2 @click="handleClick()"
+                           class="flex flex-row justify-between gap-10 items-center cursor-pointer">
+                           <span>Lorem ipsum dolor sit amet consectetur. Aliquam varius diam diam nulla ac iaculis
+                              felis.</span>
+                           <i class="bi bi-chevron-down transition-transform duration-500" :class="handleRotate()"></i>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                           class="overflow-hidden max-h-0 duration-500 transition-all">
+                           <p class="pt-3 text-sm text-greyscale-1600">
+                              Lorem ipsum dolor sit amet consectetur. Tincidunt lorem tempus diam laoreet id neque
+                              mauris eget. Quisque sollicitudin aliquet viverra leo risus nullam morbi nisi. Nisi mauris
+                              libero iaculis bibendum lorem egestas hac sem. Nunc lacus eu diam rhoncus pharetra.
+                           </p>
+                        </div>
+                     </li>
+                     <li x-data="accordion(4)">
+                        <h2 @click="handleClick()"
+                           class="flex flex-row justify-between gap-10 items-center cursor-pointer">
+                           <span>Lorem ipsum dolor sit amet consectetur. Aliquam varius diam diam nulla ac iaculis
+                              felis.</span>
+                           <i class="bi bi-chevron-down transition-transform duration-500" :class="handleRotate()"></i>
+                        </h2>
+                        <div x-ref="tab" :style="handleToggle()"
+                           class="overflow-hidden max-h-0 duration-500 transition-all">
+                           <p class="pt-3 text-sm text-greyscale-1600">
+                              Lorem ipsum dolor sit amet consectetur. Tincidunt lorem tempus diam laoreet id neque
+                              mauris eget. Quisque sollicitudin aliquet viverra leo risus nullam morbi nisi. Nisi mauris
+                              libero iaculis bibendum lorem egestas hac sem. Nunc lacus eu diam rhoncus pharetra.
+                           </p>
+                        </div>
+                     </li>
+                  </ul>
+
+                  <p class="italic text-sm">Still have some questions? <a href="./contact-us.html"
+                        class="text-primary-500 font-medium hover:underline">Contact
+                        Us</a></p>
                </div>
-               <div class="image hidden md:block col-span-3">
-                  <img src="./assets/img/services/Construction Engineering.jpg" alt="">
+               <div class="image hidden lg:block">
+                  <img src="./assets/img/services/Project Scheduling.jpg" alt="">
                </div>
             </div>
          </div>
@@ -292,13 +362,140 @@
 
 
    <!-- Footer -->
-   <footer></footer>
+   <footer>
+      <!-- CTA -->
+      <section class="cta">
+         <div class="content-wrapper">
+            <div class="container mx-auto py-16">
+               <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-10 lg:gap-20">
+                  <div class="content max-w-[550px]">
+                     <h2 class="heading heading-2">Get in touch with us</h2>
+                     <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo magnam
+                        molestias
+                        nam sit
+                        recusandae.</p>
+                  </div>
+                  <div class="flex gap-4">
+                     <a href="#" class="btn btn-primary lg:min-w-[250px]">
+                        <i class="bi bi-arrow-up-right-circle"></i>
+                        <span>Contact Us</span>
+                     </a>
+                     <a href="#" class="btn btn-secondary lg:min-w-[250px]"><span>Read more about us</span></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- creating whitespace border in bottom -->
+         <div class="h-[8vh]"></div>
+      </section>
+
+      <div class="footer bg-greyscale-1900 text-greyscale-200 py-16">
+         <div
+            class="container mx-auto flex flex-col md:flex-row lg:justify-between md:flex-wrap lg:flex-nowrap gap-10 md:gap-x-20 lg:gap-20">
+            <div class="company gap-3">
+               <img class="max-h-8 w-fit" src="./assets/img/logo_orange.svg" alt="Footer Logo">
+               <p class="text-sm mt-3 max-w-[500px] opacity-80">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos eos possimus temporibus
+                  rem? Possimus ullam vero deleniti praesentium autem.
+               </p>
+            </div>
+            <div class="links flex gap-20 whitespace-nowrap	">
+               <ul class="flex flex-col gap-1">
+                  <li>
+                     <h3 class="text-md font-bold font-inter mb-2">Quick Links</h3>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
+                        Home
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
+                        Our Services
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
+                        Contact Us
+                     </a>
+                  </li>
+               </ul>
+               <ul class="flex flex-col gap-1">
+                  <li>
+                     <h3 class="text-md font-bold font-inter mb-2">Important Links</h3>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
+                        Home
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
+                        Our Services
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
+                        Contact Us
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="social">
+               <h3 class="text-md font-bold font-inter mb-2">Follow Us</h3>
+               <ul class="flex gap-2">
+                  <li>
+                     <a href="#"
+                        class="w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300">
+                        <i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300">
+                        <i class="bi bi-linkedin"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300">
+                        <i class="bi bi-twitter"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300">
+                        <i class="bi bi-facebook"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- copyright -->
+      <div class="copyright bg-black py-4 text-greyscale-500 text-sm">
+         <div class="container mx-auto flex justify-between flex-wrap gap-1">
+            <p>&copy; 2023. All Rights Reserved</p>
+            <p>
+               Designed & Developed by
+               <a href="https://www.websitevikreta.com" target="_blank" class="text-primary-500 hover:underline">Website
+                  Vikreta</a>
+            </p>
+         </div>
+      </div>
+   </footer>
 
 
 
    <!-- ! ========================================================= -->
    <!-- ! Scripts -->
    <!-- ! ========================================================= -->
+   <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
    <script src="./assets/js/global.js"></script>
    <script src="./assets/js/index.js"></script>
 </body>
