@@ -236,7 +236,6 @@ nav #navbarToggle:checked ~ .navMenu {
 /* services */
 .services .image-wrapper {
    position: relative;
-   height: 150px;
    overflow: hidden;
    display: block;
 }
@@ -271,9 +270,10 @@ nav #navbarToggle:checked ~ .navMenu {
          rgba(253, 171, 45, 0.3),
          rgba(253, 171, 45, 0.3)
       ),
-      url("../img/services/Construction Engineering.webp");
+      url("../img/bg-cta.webp");
    background-position: top;
    background-size: cover;
+   background-repeat: no-repeat;
    background-attachment: fixed;
 }
 .cta .content-wrapper {
