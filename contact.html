@@ -125,7 +125,7 @@
                class="navMenu absolute hidden top-[130%] w-[100%] z-50 bg-greyscale-100 rounded-lg p-10 lg:relative lg:p-0 lg:bg-transparent lg:w-fit mr-auto flex flex-col lg:flex-row items-stretch gap-8 font-medium">
                <li>
                   <a href="#"
-                     class="block h-full grid place-content-center text-primary-500 active hover:text-primary-500 transition-colors duration-300">
+                     class="block h-full grid place-content-center hover:text-primary-500 transition-colors duration-300">
                      Home
                   </a>
                </li>
@@ -143,7 +143,7 @@
                </li>
                <li>
                   <a href="#"
-                     class="block h-full grid place-content-center hover:text-primary-500 transition-colors duration-300">
+                     class="block h-full grid place-content-center text-primary-500 active hover:text-primary-500 transition-colors duration-300">
                      Contact Us
                   </a>
                </li>
@@ -160,8 +160,102 @@
 
 
    <!-- Main -->
-   <main class="min-h-[200vh]">
+   <main>
+      <!-- ======================================== -->
+      <!-- Hero Section -->
+      <!-- ======================================== -->
+      <div class="secondary-hero h-[80vh] grid place-content-center">
+         <div
+            class="content text-center px-10 md:px-initial max-w-[600px] text-greyscale-100 flex flex-col items-center gap-4">
+            <p>
+               <i class="bi bi-dash-lg"></i>
+               <span>Contact Us</span>
+               <i class="bi bi-dash-lg"></i>
+            </p>
+            <h1 class="font-inter text-4xl md:text-5xl font-black leading-none">
+               Let us be the <span class="text-primary-500">part of change</span> in your life.
+            </h1>
+            <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque commodi, soluta inventore facilis vitae
+               quos non, tempora esse quod autem eos doloremque sed dicta veniam! Aperiam quis quisquam ex veritatis!
+            </p>
+         </div>
+      </div>
 
+      <!-- ======================================== -->
+      <!-- Contact Section -->
+      <!-- ======================================== -->
+      <section class="contact">
+         <div class="container mx-auto my-20 md:my-[100px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-20 md:gap-10 lg:gap-20 relative">
+               <!-- contact info -->
+               <aside class="md:sticky md:top-[80px] h-fit lg:col-span-2 flex flex-col items-start gap-10">
+                  <div class="flex flex-col items-start gap-3">
+                     <h3 class="font-inter font-semibold text-lg">Address</h3>
+                     <p>
+                        1703, B3, Rosa Oasis, Hiranandani Estate, <br> <b class="font-medium">Thane - 400080,
+                           Maharashtra</b>
+                     </p>
+                  </div>
+
+                  <div class="flex flex-col items-start gap-3">
+                     <h3 class="font-inter font-semibold text-lg">Contact Details</h3>
+                     <a href="#" class="hover:text-primary-500 transition-colors duration-300">
+                        <i class="bi bi-telephone-fill text-primary-500 mr-2"></i>
+                        <span>+91 88888 88888</span>
+                     </a>
+                     <a href="#" class="hover:text-primary-500 transition-colors duration-300">
+                        <i class="bi bi-envelope-fill text-primary-500 mr-2"></i>
+                        <span>contact@psilentganges.com</span>
+                     </a>
+                  </div>
+               </aside>
+               <!-- contact form -->
+               <form action="#" class="order-first lg:col-span-3 md:order-last">
+                  <h2 class="heading heading-2">Send us a message</h2>
+                  <p class="text-xs uppercase text-red mt-2 tracking-wider">* Required Fields</p>
+
+                  <div class="form-elements mt-8 md:mt-10 grid grid-cols-1 gap-3 md:gap-4">
+                     <div class="form-group flex flex-col gap-1">
+                        <label for="fullName">Full Name <span class="text-red">*</span></label>
+                        <input id="fullName" type="text"
+                           class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none">
+                        <span class="error text-red text-xs italic"></span>
+                     </div>
+                     <div class="form-group flex flex-col gap-1">
+                        <label for="email">Email Address <span class="text-red">*</span></label>
+                        <input id="email" type="text"
+                           class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none">
+                        <span class="error text-red text-xs italic"></span>
+                     </div>
+                     <div class="form-group flex flex-col gap-1">
+                        <label for="phoneNumber">Phone Number <span class="text-red">*</span></label>
+                        <input id="phoneNumber" type="text"
+                           class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none">
+                        <span class="error text-red text-xs italic"></span>
+                     </div>
+                     <div class="form-group flex flex-col gap-1">
+                        <label for="subject">Subject <span class="text-red">*</span></label>
+                        <input id="subject" type="text"
+                           class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none">
+                        <span class="error text-red text-xs italic"></span>
+                     </div>
+                     <div class="form-group flex flex-col gap-1">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="30" rows="3"
+                           class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none"></textarea>
+                        <span class="error text-red text-xs italic"></span>
+                     </div>
+
+                     <button class="btn btn-primary mt-2">
+                        <i class="bi bi-send-fill"></i>
+                        <span>Send Now</span>
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
    </main>
 
 
@@ -314,6 +408,6 @@
    <script src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
    <script src="./assets/js/global.js"></script>
-   <script src="./assets/js/index.js"></script>
+   <script src="./assets/js/contact.js"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@ html {
    font-family: "Poppins", sans-serif;
    color: var(--color-dark);
    font-size: 14px;
+   scroll-behavior: smooth;
 }
 
 p {
@@ -251,7 +252,6 @@ nav #navbarToggle:checked ~ .navMenu {
    transition: 0.5s ease;
 }
 .services .image-wrapper img {
-   /*  */
    transition: 1s ease;
 }
 .services .card:hover .image-wrapper img {
@@ -303,4 +303,18 @@ nav #navbarToggle:checked ~ .navMenu {
    nav .navMenu {
       display: flex !important;
    }
+}
+
+/* styling contact page */
+.secondary-hero {
+   background: linear-gradient(
+         to top,
+         rgba(0, 0, 0, 60%) 0%,
+         rgba(0, 0, 0, 60%) 100%
+      ),
+      url("../img/contact-background.webp");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
 }
