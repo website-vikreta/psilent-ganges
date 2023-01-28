@@ -317,4 +317,5 @@ nav #navbarToggle:checked ~ .navMenu {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
