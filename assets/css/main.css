@@ -322,3 +322,6 @@ nav #navbarToggle:checked ~ .navMenu {
    background-attachment: fixed;
    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
+.secondary-hero.misc-pages {
+   clip-path: none;
+}
