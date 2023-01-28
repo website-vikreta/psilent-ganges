@@ -211,7 +211,7 @@
                   </div>
                </aside>
                <!-- contact form -->
-               <form action="#" class="order-first lg:col-span-3 md:order-last">
+               <form action="#" class="order-first lg:col-span-3 md:order-last" id="contactForm">
                   <h2 class="heading heading-2">Send us a message</h2>
                   <p class="text-xs uppercase text-red mt-2 tracking-wider">* Required Fields</p>
 
@@ -220,37 +220,40 @@
                         <label for="fullName">Full Name <span class="text-red">*</span></label>
                         <input id="fullName" type="text"
                            class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none">
-                        <span class="error text-red text-xs italic"></span>
+                        <span class="error text-red text-xs italic" id="fullNameError"></span>
                      </div>
                      <div class="form-group flex flex-col gap-1">
                         <label for="email">Email Address <span class="text-red">*</span></label>
                         <input id="email" type="text"
                            class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none">
-                        <span class="error text-red text-xs italic"></span>
+                        <span class="error text-red text-xs italic" id="emailError"></span>
                      </div>
                      <div class="form-group flex flex-col gap-1">
                         <label for="phoneNumber">Phone Number <span class="text-red">*</span></label>
                         <input id="phoneNumber" type="text"
                            class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none">
-                        <span class="error text-red text-xs italic"></span>
+                        <span class="error text-red text-xs italic" id="phoneNumberError"></span>
                      </div>
                      <div class="form-group flex flex-col gap-1">
                         <label for="subject">Subject <span class="text-red">*</span></label>
                         <input id="subject" type="text"
                            class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none">
-                        <span class="error text-red text-xs italic"></span>
+                        <span class="error text-red text-xs italic" id="subjectError"></span>
                      </div>
                      <div class="form-group flex flex-col gap-1">
                         <label for="message">Message</label>
                         <textarea id="message" cols="30" rows="3"
                            class="border border-greyscale-400 bg-greyscale-200 p-3 focus:border-greyscale-1000 focus:outline-none"></textarea>
-                        <span class="error text-red text-xs italic"></span>
+                        <span class="error text-red text-xs italic" id="messageError"></span>
                      </div>
 
-                     <button class="btn btn-primary mt-2">
+                     <button class="btn btn-primary mt-2" id="submitContactFormBtn">
                         <i class="bi bi-send-fill"></i>
                         <span>Send Now</span>
                      </button>
+
+                     <!-- success messages -->
+                     <div class="mt-2" id="responseText"></div>
                   </div>
                </form>
             </div>
