@@ -326,3 +326,64 @@ nav #navbarToggle:checked ~ .navMenu {
 .secondary-hero.misc-pages {
    clip-path: none;
 }
+
+.secondary-hero.about-hero {
+   background: linear-gradient(
+         to top,
+         rgba(0, 0, 0, 70%) 0%,
+         rgba(0, 0, 0, 70%) 100%
+      ),
+      url("../img/about-us-hero.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.secondary-hero.services-hero {
+   background: linear-gradient(
+         to top,
+         rgba(0, 0, 0, 60%) 0%,
+         rgba(0, 0, 0, 60%) 100%
+      ),
+      url("../img/services/services-hero.jpg");
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.secondary-hero.projMgmt-hero {
+   background: linear-gradient(
+         to top,
+         rgba(0, 0, 0, 60%) 0%,
+         rgba(0, 0, 0, 60%) 100%
+      ),
+      url("../img/services/project-management-hero.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.secondary-hero.constructionMgmt-hero {
+   background: linear-gradient(
+         to top,
+         rgba(0, 0, 0, 70%) 0%,
+         rgba(0, 0, 0, 70%) 100%
+      ),
+      url("../img/services/construction-management-hero.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.secondary-hero.contact-hero {
+   background: linear-gradient(
+         to top,
+         rgba(0, 0, 0, 70%) 0%,
+         rgba(0, 0, 0, 70%) 100%
+      ),
+      url("../img/contact-us-hero.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
