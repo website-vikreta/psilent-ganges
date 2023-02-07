@@ -26,7 +26,7 @@
 
 
    <!-- OnPage SEO -->
-   <title>Home | Psilent Ganges</title>
+   <title>Our Services</title>
    <meta content="Dummy Description" name="description" />
    <meta content="keyword 1, keyword 2" name="keywords" />
 
@@ -45,272 +45,107 @@
 <body>
 
    <!-- Header -->
-   <header class="relative">
-
-      <!-- top nav -->
-      <aside class="bg-greyscale-1900 text-greyscale-200 pt-3 pb-6">
-         <div class="container mx-auto hidden md:flex justify-between gap-20 text-xs leading-none">
-            <ul class="flex items-center gap-6">
-               <li class="hover:text-primary-500 transition-colors duration-500">
-                  <a href="#" class="flex items-center gap-2">
-                     <span
-                        class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px]">
-                        <i class="bi bi-telephone-inbound-fill"></i>
-                     </span>
-                     <span>+91 88888 88888</span>
-                  </a>
-               </li>
-               <li class="hover:text-primary-500 transition-colors duration-500">
-                  <a href="#" class="flex items-center gap-2">
-                     <span
-                        class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px]">
-                        <i class="bi bi-envelope-plus-fill"></i>
-                     </span>
-                     <span>engineering@psilentganges.com</span>
-                  </a>
-               </li>
-            </ul>
-
-            <ul class="flex gap-2">
-               <li>
-                  <a href="#"
-                     class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px] hover:text-primary-500 transition-colors duration-500"
-                     aria-label="Follow us on Instagram" rel="noopener">
-                     <i class="bi bi-instagram"></i></a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px] hover:text-primary-500 transition-colors duration-500"
-                     aria-label="Connect with us on Linkedin" rel="noopener">
-                     <i class="bi bi-linkedin"></i>
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px] hover:text-primary-500 transition-colors duration-500"
-                     aria-label="Follow us on Twitter" rel="noopener">
-                     <i class="bi bi-twitter"></i>
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px] hover:text-primary-500 transition-colors duration-500"
-                     aria-label="Be our friend on Facebook" rel="noopener">
-                     <i class="bi bi-facebook"></i>
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </aside>
-      <!-- main nav -->
-      <nav class="navbar container mx-auto absolute top-[calc(100%-12px)] left-2/4 -translate-x-2/4 z-50 w-full">
-         <div
-            class="relative bg-greyscale-100 rounded-lg flex justify-between lg:justify-start gap-5 xl:gap-10 items-stretch ">
-            <!-- checkbox -->
-            <input type="checkbox" class="hidden" id="navbarToggle">
-            <!-- Logo -->
-            <div
-               class="logo grid place-content-center bg-greyscale-300 py-4 xl:py-5 pl-6 xl:pl-8 pr-12 xl:pr-16 rounded-tl-lg rounded-bl-lg">
-               <a href="./index.html">
-                  <img src="./assets/img/logo.svg" alt="Psilent Logo" class="max-h-7 lg:max-h-8">
-               </a>
-            </div>
-            <!-- toggle -->
-            <label for="navbarToggle"
-               class="cursor-pointer lg:hidden p-6 md:p-4 md:px-5 grid place-content-center text-3xl">
-               <i class="bi bi-list"></i>
-            </label>
-            <!-- Links -->
-            <ul
-               class="navMenu absolute hidden top-[130%] w-[100%] z-50 bg-greyscale-100 rounded-lg p-10 lg:relative lg:p-0 lg:bg-transparent lg:w-fit mr-auto flex flex-col lg:flex-row items-stretch gap-8 font-medium">
-               <li>
-                  <a href="#"
-                     class="block h-full grid place-content-center text-primary-500 active hover:text-primary-500 transition-colors duration-300">
-                     Home
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block h-full grid place-content-center hover:text-primary-500 transition-colors duration-300">
-                     About Us
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block h-full grid place-content-center hover:text-primary-500 transition-colors duration-300">
-                     Services
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block h-full grid place-content-center hover:text-primary-500 transition-colors duration-300">
-                     Contact Us
-                  </a>
-               </li>
-            </ul>
-            <!-- CTA -->
-            <a href="#"
-               class="hidden lg:flex bg-primary-500 py-5 xl:py-6 px-8 xl:px-10 font-medium rounded-tr-lg rounded-br-lg whitespace-nowrap justify-center items-center gap-2 hover:bg-primary-300 transition-colors duration-500">
-               <span>Get a free quote</span>
-               <i class="bi bi-arrow-right"></i>
-            </a>
-         </div>
-      </nav>
-   </header>
+   <website-header></website-header>
 
 
    <!-- Main -->
-   <main class="min-h-[200vh]">
+   <main>
+      <!-- ======================================== -->
+      <!-- Hero Section -->
+      <!-- ======================================== -->
+      <div class="secondary-hero h-[85vh] grid place-content-center relative">
+         <div
+            class="content text-center px-10 md:px-initial max-w-[800px] text-greyscale-100 flex flex-col items-center gap-4">
+            <p>
+               <i class="bi bi-dash-lg"></i>
+               <span>Our Services</span>
+               <i class="bi bi-dash-lg"></i>
+            </p>
+            <h1 class="font-inter text-4xl md:text-5xl font-black leading-none">
+               We are new age <span class="text-primary-500">Construction Consultancy</span> service company
+            </h1>
+            <p>
+               It shall be our duty to thrust India as one of the top contributors in global engineering management and
+               solutions.
+            </p>
+         </div>
 
+         <a href="#allservices"
+            class="block scroll grid gap-1 text-center text-greyscale-100 absolute bottom-10 left-1/2 -translate-x-1/2 transition duration-300 hover:text-primary-500">
+            <span class="text-xs tracking-wider font-thin">SCROLL</span>
+            <i class="bi bi-chevron-double-down animate-bounce text-lg"></i>
+         </a>
+      </div>
+
+
+      <!-- ======================================== -->
+      <!-- Services Grid -->
+      <!-- ======================================== -->
+      <div class="py-[4rem] md:py-[100px]" id="allservices">
+         <div class="container mx-auto grid gap-10 md:gap-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-20">
+               <!-- image -->
+               <div>
+                  <img src="./assets/img/services/project-scheduling.webp" alt="Project Management">
+               </div>
+               <!-- content -->
+               <div class="content flex flex-col gap-4">
+                  <h2 class="heading">Project Management</h2>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi a sint inventore nam quod
+                     error quas. Quidem sequi error vero porro possimus quae iusto, rerum sint quos, consequatur at!
+                  </p>
+                  <a href="./project-management.html" class="btn btn-secondary">Read More <i
+                        class="bi bi-arrow-right"></i></a>
+               </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-20">
+               <!-- image -->
+               <div class="lg:order-last">
+                  <img src="./assets/img/services/construction-management.webp" alt="Construction Management">
+               </div>
+               <!-- content -->
+               <div class="content flex flex-col gap-4">
+                  <h2 class="heading">Construction Management</h2>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi a sint inventore nam quod
+                     error quas. Quidem sequi error vero porro possimus quae iusto, rerum sint quos, consequatur at!
+                  </p>
+                  <a href="./construction-management.html" class="btn btn-secondary">Read More <i
+                        class="bi bi-arrow-right"></i></a>
+               </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-20">
+               <!-- image -->
+               <div>
+                  <img src="./assets/img/services/contract-management.webp" alt="Construction Management">
+               </div>
+               <!-- content -->
+               <div class="content flex flex-col gap-4">
+                  <h2 class="heading">Miscellaneous Services</h2>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi a sint inventore nam quod
+                     error quas. Quidem sequi error vero porro possimus quae iusto, rerum sint quos, consequatur at!
+                  </p>
+                  <a href="./under-construction.html" class="btn btn-secondary">Read More <i
+                        class="bi bi-arrow-right"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
    </main>
 
 
    <!-- Footer -->
-   <footer>
-      <!-- CTA -->
-      <section class="cta">
-         <div class="content-wrapper">
-            <div class="container mx-auto py-16">
-               <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-10 lg:gap-20">
-                  <div class="content max-w-[550px]">
-                     <h2 class="heading heading-2">Get in touch with us</h2>
-                     <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo magnam
-                        molestias
-                        nam sit
-                        recusandae.</p>
-                  </div>
-                  <div class="flex flex-wrap gap-4">
-                     <a href="#" class="btn btn-primary cursorEnter  lg:min-w-[250px]">
-                        <i class="bi bi-arrow-up-right-circle"></i>
-                        <span>Contact Us</span>
-                     </a>
-                     <a href="#" class="btn btn-secodary cursorEnter  lg:min-w-[250px]"><span>Read more about
-                           us</span></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- creating whitespace border in bottom -->
-         <div class="h-[8vh] xl:max-h-[80px]"></div>
-      </section>
-      <!-- footer -->
-      <div class="footer bg-greyscale-1900 text-greyscale-200 py-16">
-         <div
-            class="container mx-auto flex flex-col md:flex-row lg:justify-between md:flex-wrap lg:flex-nowrap gap-10 md:gap-x-20 lg:gap-20">
-            <div class="company gap-3">
-               <img class="max-h-8 w-fit" src="./assets/img/logo_orange.svg" alt="Footer Logo">
-               <p class="text-sm mt-3 max-w-[500px] opacity-80">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos eos possimus temporibus
-                  rem? Possimus ullam vero deleniti praesentium autem.
-               </p>
-            </div>
-            <div class="links flex gap-20 whitespace-nowrap	">
-               <ul class="flex flex-col gap-1">
-                  <li>
-                     <h3 class="text-md font-bold font-inter mb-2">Quick Links</h3>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Home
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Our Services
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Contact Us
-                     </a>
-                  </li>
-               </ul>
-               <ul class="flex flex-col gap-1">
-                  <li>
-                     <h3 class="text-md font-bold font-inter mb-2">Important Links</h3>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Home
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Our Services
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Contact Us
-                     </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="social">
-               <h3 class="text-md font-bold font-inter mb-2">Follow Us</h3>
-               <ul class="flex gap-2">
-                  <li>
-                     <a href="#"
-                        class="cursorEnter w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300"
-                        aria-label="Follow us on Instagram" rel="noopener">
-                        <i class="bi bi-instagram"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="cursorEnter w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300"
-                        aria-label="Connect with us on Linkedin" rel="noopener">
-                        <i class="bi bi-linkedin"></i>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="cursorEnter w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300"
-                        aria-label="Follow us on Twitter" rel="noopener">
-                        <i class="bi bi-twitter"></i>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="cursorEnter w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300"
-                        aria-label="Be our friend on Facebook" rel="noopener">
-                        <i class="bi bi-facebook"></i>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </div>
-      <!-- copyright -->
-      <div class="copyright bg-black py-4 text-greyscale-500 text-sm">
-         <div class="container mx-auto flex justify-between flex-wrap gap-1">
-            <p>&copy; 2023. All Rights Reserved</p>
-            <p>
-               Designed & Developed by
-               <a href="https://www.websitevikreta.com" target="_blank" class="text-primary-500 hover:underline">Website
-                  Vikreta</a>
-            </p>
-         </div>
-      </div>
-
-      <!-- back to top -->
-      <a href="#"
-         class="gototop btn btn-primary fixed p-3 md:w-fit md:h-fit w-[30px] h-[30px] bottom-[20px] right-[20px] md:bottom-[20px] md:right-[20px] invisible opacity-0 transition-opacity duration-500"
-         id="gototop" title="Go to Top">
-         <i class="bi bi-chevron-up"></i>
-      </a>
-   </footer>
+   <website-footer></website-footer>
 
 
 
    <!-- ! ========================================================= -->
    <!-- ! Scripts -->
    <!-- ! ========================================================= -->
+   <script type="module" src="./assets/js/components/header.js"></script>
+   <script type="module" src="./assets/js/components/footer.js"></script>
    <script src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
    <script src="./assets/js/global.js"></script>

@@ -26,7 +26,7 @@
 
 
    <!-- OnPage SEO -->
-   <title>Home | Psilent Ganges</title>
+   <title>About Us</title>
    <meta content="Dummy Description" name="description" />
    <meta content="keyword 1, keyword 2" name="keywords" />
 
@@ -45,119 +45,7 @@
 <body>
 
    <!-- Header -->
-   <header class="relative">
-
-      <!-- top nav -->
-      <aside class="bg-greyscale-1900 text-greyscale-200 pt-3 pb-6">
-         <div class="container mx-auto hidden md:flex justify-between gap-20 text-xs leading-none">
-            <ul class="flex items-center gap-6">
-               <li class="hover:text-primary-500 transition-colors duration-500">
-                  <a href="#" class="flex items-center gap-2">
-                     <span
-                        class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px]">
-                        <i class="bi bi-telephone-inbound-fill"></i>
-                     </span>
-                     <span>+91 88888 88888</span>
-                  </a>
-               </li>
-               <li class="hover:text-primary-500 transition-colors duration-500">
-                  <a href="#" class="flex items-center gap-2">
-                     <span
-                        class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px]">
-                        <i class="bi bi-envelope-plus-fill"></i>
-                     </span>
-                     <span>engineering@psilentganges.com</span>
-                  </a>
-               </li>
-            </ul>
-
-            <ul class="flex gap-2">
-               <li>
-                  <a href="#"
-                     class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px] hover:text-primary-500 transition-colors duration-500"
-                     aria-label="Follow us on Instagram" rel="noopener">
-                     <i class="bi bi-instagram"></i></a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px] hover:text-primary-500 transition-colors duration-500"
-                     aria-label="Connect with us on Linkedin" rel="noopener">
-                     <i class="bi bi-linkedin"></i>
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px] hover:text-primary-500 transition-colors duration-500"
-                     aria-label="Follow us on Twitter" rel="noopener">
-                     <i class="bi bi-twitter"></i>
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block w-7 h-7 grid place-content-center rounded-full border border-greyscale-1000 text-[10px] hover:text-primary-500 transition-colors duration-500"
-                     aria-label="Be our friend on Facebook" rel="noopener">
-                     <i class="bi bi-facebook"></i>
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </aside>
-      <!-- main nav -->
-      <nav class="navbar container mx-auto absolute top-[calc(100%-12px)] left-2/4 -translate-x-2/4 z-50 w-full">
-         <div
-            class="relative bg-greyscale-100 rounded-lg flex justify-between lg:justify-start gap-5 xl:gap-10 items-stretch ">
-            <!-- checkbox -->
-            <input type="checkbox" class="hidden" id="navbarToggle">
-            <!-- Logo -->
-            <div
-               class="logo grid place-content-center bg-greyscale-300 py-4 xl:py-5 pl-6 xl:pl-8 pr-12 xl:pr-16 rounded-tl-lg rounded-bl-lg">
-               <a href="./index.html">
-                  <img src="./assets/img/logo.svg" alt="Psilent Logo" class="max-h-7 lg:max-h-8">
-               </a>
-            </div>
-            <!-- toggle -->
-            <label for="navbarToggle"
-               class="cursor-pointer lg:hidden p-6 md:p-4 md:px-5 grid place-content-center text-3xl">
-               <i class="bi bi-list"></i>
-            </label>
-            <!-- Links -->
-            <ul
-               class="navMenu absolute hidden top-[130%] w-[100%] z-50 bg-greyscale-100 rounded-lg p-10 lg:relative lg:p-0 lg:bg-transparent lg:w-fit mr-auto flex flex-col lg:flex-row items-stretch gap-8 font-medium">
-               <li>
-                  <a href="#"
-                     class="block h-full grid place-content-center text-primary-500 active hover:text-primary-500 transition-colors duration-300">
-                     Home
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block h-full grid place-content-center hover:text-primary-500 transition-colors duration-300">
-                     About Us
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block h-full grid place-content-center hover:text-primary-500 transition-colors duration-300">
-                     Services
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                     class="block h-full grid place-content-center hover:text-primary-500 transition-colors duration-300">
-                     Contact Us
-                  </a>
-               </li>
-            </ul>
-            <!-- CTA -->
-            <a href="#"
-               class="hidden lg:flex bg-primary-500 py-5 xl:py-6 px-8 xl:px-10 font-medium rounded-tr-lg rounded-br-lg whitespace-nowrap justify-center items-center gap-2 hover:bg-primary-300 transition-colors duration-500">
-               <span>Get a free quote</span>
-               <i class="bi bi-arrow-right"></i>
-            </a>
-         </div>
-      </nav>
-   </header>
-
+   <website-header></website-header>
 
    <!-- Main -->
    <main>
@@ -364,29 +252,39 @@
       <!-- ======================================== -->
       <section class="core-values">
          <div class="container mx-auto my-[80px] md:my-[100px]">
-            <div class="flex flex-col justify-center items-center">
-               <h3 class="tracking-wider uppercase text-sm text-primary-500">Core Values</h3>
-               <h2 class="heading heading-2">Psilent Ganges Culture</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:items-center gap-10 lg:gap-20">
+               <div class="h-full lg:h-fit">
+                  <img src="./assets/img/about-thumbnail.jpg" alt="" class="sticky top-[20px] lg:relative lg:top-0">
+               </div>
+               <div class="mx-auto grid gap-3 max-w-[800px]">
+                  <div class="flex flex-col mb-5">
+                     <h3 class="tracking-wider uppercase text-sm text-primary-500">Core Values</h3>
+                     <h2 class="heading heading-2">Psilent Ganges Culture</h2>
+                  </div>
+                  <p>
+                     Science does not drive humanities. It is humanities that drive science.
+                     At Psilent Ganges, we emphasize on having superior ideals and values that align with evolving
+                     and
+                     revolutionizing the society. We only strive and work to uphold these values. It is the very
+                     basis
+                     of
+                     why
+                     we function. We understand that it is our duty to merge these values into our working
+                     environment.
+                  </p>
+                  <p>
+                     Tempering our core principle of dutiful service with absolute integrity, responsibility and
+                     reliability
+                     is our sole competence.
+                  </p>
+                  <p>
+                     With a noble mission to amplify the lives of people, community and civilisation; we help to
+                     formulate
+                     end-to-end solutions covering all aspects, right from consultation to project completion.
+                  </p>
+               </div>
             </div>
 
-            <div class="text-center mx-auto my-10 grid gap-3 max-w-[800px]">
-               <p>
-                  Science does not drive humanities. It is humanities that drive science.
-                  At Psilent Ganges, we emphasize on having superior ideals and values that align with evolving and
-                  revolutionizing the society. We only strive and work to uphold these values. It is the very basis of
-                  why
-                  we function. We understand that it is our duty to merge these values into our working environment.
-               </p>
-               <p>
-                  Tempering our core principle of dutiful service with absolute integrity, responsibility and
-                  reliability
-                  is our sole competence.
-               </p>
-               <p>
-                  With a noble mission to amplify the lives of people, community and civilisation; we help to formulate
-                  end-to-end solutions covering all aspects, right from consultation to project completion.
-               </p>
-            </div>
 
             <!-- Our Vision -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 my-10 md:my-20 mt-[50px]">
@@ -456,155 +354,87 @@
 
          </div>
       </section>
-   </main>
 
 
-   <!-- Footer -->
-   <footer>
-      <!-- CTA -->
-      <section class="cta">
-         <div class="content-wrapper">
-            <div class="container mx-auto py-16">
-               <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-10 lg:gap-20">
-                  <div class="content max-w-[550px]">
-                     <h2 class="heading heading-2">Get in touch with us</h2>
-                     <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo magnam
-                        molestias
-                        nam sit
-                        recusandae.</p>
+      <!-- ======================================== -->
+      <!-- Our Team Section -->
+      <!-- ======================================== -->
+      <section class="our-team bg-greyscale-1800 text-greyscale-100">
+         <div class="container mx-auto mt-[80px] md:mt-[100px] py-[4rem] md:py-[100px]">
+            <!-- Heading -->
+            <div class="flex flex-col items-center mb-5">
+               <h3 class="tracking-wider uppercase text-sm text-primary-500">Our Team</h3>
+               <h2 class="heading heading-2">Psilent Ganges Team</h2>
+            </div>
+            <!-- Member cards -->
+            <div class="flex justify-center flex-wrap gap-10 lg:flex-nowrap lg:gap-20 text-center mt-16 md:mt-20">
+               <div class="card flex flex-col items-center gap-4 w-[400px]">
+                  <!-- image  -->
+                  <div class="max-w-[120px] aspect-square rounded-full overflow-hidden border-4 border-primary-500">
+                     <img src="./assets/img/bg-cta.webp" alt="">
                   </div>
-                  <div class="flex flex-wrap gap-4">
-                     <a href="#" class="btn btn-primary cursorEnter  lg:min-w-[250px]">
-                        <i class="bi bi-arrow-up-right-circle"></i>
-                        <span>Contact Us</span>
-                     </a>
-                     <a href="#" class="btn btn-secodary cursorEnter  lg:min-w-[250px]"><span>Read more about
-                           us</span></a>
+                  <div class="flex flex-col items-center gap-0">
+                     <!-- Name -->
+                     <h3 class="font-inter text-2xl font-bold">Mr. Gaurav Dey</h3>
+                     <!-- Designation -->
+                     <h4 class="font-inter text-primary-500">Managing Director</h4>
+                     <!-- Introduction -->
+                     <p class="text-sm mt-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolores officiis
+                        voluptatibus nisi velit magnam vero quisquam delectus expedita.
+                     </p>
+                  </div>
+               </div>
+               <div class="card flex flex-col items-center gap-4 w-[400px]">
+                  <!-- image  -->
+                  <div class="max-w-[120px] aspect-square rounded-full overflow-hidden border-4 border-primary-500">
+                     <img src="./assets/img/bg-cta.webp" alt="">
+                  </div>
+                  <div class="flex flex-col items-center gap-0">
+                     <!-- Name -->
+                     <h3 class="font-inter text-2xl font-bold">Mr. Kaushal Srivastava</h3>
+                     <!-- Designation -->
+                     <h4 class="font-inter text-primary-500">Director, Project Management</h4>
+                     <!-- Introduction -->
+                     <p class="text-sm mt-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. officiis
+                        voluptatibus nisi velit magnam vero quisquam delectus expedita.
+                     </p>
+                  </div>
+               </div>
+               <div class="card flex flex-col items-center gap-4 w-[400px]">
+                  <!-- image  -->
+                  <div class="max-w-[120px] aspect-square rounded-full overflow-hidden border-4 border-primary-500">
+                     <img src="./assets/img/bg-cta.webp" alt="">
+                  </div>
+                  <div class="flex flex-col items-center gap-0">
+                     <!-- Name -->
+                     <h3 class="font-inter text-2xl font-bold">Mr. Debasish Dey</h3>
+                     <!-- Designation -->
+                     <h4 class="font-inter text-primary-500">Director, Construction Management</h4>
+                     <!-- Introduction -->
+                     <p class="text-sm mt-2">
+                        Lorem ipsum dolor sit amet. Voluptatum sint dolores officiis
+                        voluptatibus nisi velit magnam vero quisquam delectus expedita.
+                     </p>
                   </div>
                </div>
             </div>
          </div>
-         <!-- creating whitespace border in bottom -->
-         <div class="h-[8vh] xl:max-h-[80px]"></div>
       </section>
-      <!-- footer -->
-      <div class="footer bg-greyscale-1900 text-greyscale-200 py-16">
-         <div
-            class="container mx-auto flex flex-col md:flex-row lg:justify-between md:flex-wrap lg:flex-nowrap gap-10 md:gap-x-20 lg:gap-20">
-            <div class="company gap-3">
-               <img class="max-h-8 w-fit" src="./assets/img/logo_orange.svg" alt="Footer Logo">
-               <p class="text-sm mt-3 max-w-[500px] opacity-80">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dignissimos eos possimus temporibus
-                  rem? Possimus ullam vero deleniti praesentium autem.
-               </p>
-            </div>
-            <div class="links flex gap-20 whitespace-nowrap	">
-               <ul class="flex flex-col gap-1">
-                  <li>
-                     <h3 class="text-md font-bold font-inter mb-2">Quick Links</h3>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Home
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Our Services
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Contact Us
-                     </a>
-                  </li>
-               </ul>
-               <ul class="flex flex-col gap-1">
-                  <li>
-                     <h3 class="text-md font-bold font-inter mb-2">Important Links</h3>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Home
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Our Services
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="transition-colors duration-500 hover:text-primary-500 text-sm opacity-80 hover:opacity-100 underline">
-                        Contact Us
-                     </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="social">
-               <h3 class="text-md font-bold font-inter mb-2">Follow Us</h3>
-               <ul class="flex gap-2">
-                  <li>
-                     <a href="#"
-                        class="cursorEnter w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300"
-                        aria-label="Follow us on Instagram" rel="noopener">
-                        <i class="bi bi-instagram"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="cursorEnter w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300"
-                        aria-label="Connect with us on Linkedin" rel="noopener">
-                        <i class="bi bi-linkedin"></i>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="cursorEnter w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300"
-                        aria-label="Follow us on Twitter" rel="noopener">
-                        <i class="bi bi-twitter"></i>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="cursorEnter w-10 h-10 grid place-content-center bg-primary-500 transition-colors duration-500 hover:bg-primary-300"
-                        aria-label="Be our friend on Facebook" rel="noopener">
-                        <i class="bi bi-facebook"></i>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </div>
-      <!-- copyright -->
-      <div class="copyright bg-black py-4 text-greyscale-500 text-sm">
-         <div class="container mx-auto flex justify-between flex-wrap gap-1">
-            <p>&copy; 2023. All Rights Reserved</p>
-            <p>
-               Designed & Developed by
-               <a href="https://www.websitevikreta.com" target="_blank" class="text-primary-500 hover:underline">Website
-                  Vikreta</a>
-            </p>
-         </div>
-      </div>
+   </main>
 
-      <!-- back to top -->
-      <a href="#"
-         class="gototop btn btn-primary fixed p-3 md:w-fit md:h-fit w-[30px] h-[30px] bottom-[20px] right-[20px] md:bottom-[20px] md:right-[20px] invisible opacity-0 transition-opacity duration-500"
-         id="gototop" title="Go to Top">
-         <i class="bi bi-chevron-up"></i>
-      </a>
-   </footer>
+
+   <!-- Footer -->
+   <website-footer></website-footer>
 
 
 
    <!-- ! ========================================================= -->
    <!-- ! Scripts -->
    <!-- ! ========================================================= -->
+   <script type="module" src="./assets/js/components/header.js"></script>
+   <script type="module" src="./assets/js/components/footer.js"></script>
    <script src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
    <script src="./assets/js/global.js"></script>

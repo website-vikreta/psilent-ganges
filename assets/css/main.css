@@ -295,6 +295,7 @@ nav #navbarToggle:checked ~ .navMenu {
    }
 
    nav .navMenu .active {
+      color: var(--color-primary);
       box-shadow: inset 0 -4px 0 0 #fd9a02;
       text-decoration: initial;
    }
