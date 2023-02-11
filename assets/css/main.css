@@ -16,7 +16,8 @@ html {
    scroll-behavior: smooth;
 }
 
-p {
+p,
+ul {
    line-height: 150%;
    opacity: 0.9;
 }
