@@ -71,7 +71,7 @@ class WebsiteFooter extends HTMLElement {
                   </ul>
                   <ul class="flex flex-col gap-1">
                      <li>
-                        <h3 class="text-md font-bold font-inter mb-2">Our Services</h3>
+                        <h3 class="text-md font-bold font-inter mb-2">Our Solutions</h3>
                      </li>
                      <li>
                         <a href="./project-management.html"

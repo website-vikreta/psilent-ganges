@@ -82,9 +82,9 @@ class WebsiteHeader extends HTMLElement {
                      </a>
                   </li>
                   <li>
-                     <a href="./services.html"
+                     <a href="./solutions.html"
                         class="block h-full grid place-content-center hover:text-primary-500 transition-colors duration-300">
-                        Services
+                        Solutions
                      </a>
                   </li>
                   <li>
